@@ -1,0 +1,23 @@
+{
+  "name": "verify-client",
+  "version": "1.0.0",
+  "description": "Fixture.ai Verify API client for Node.js and browsers",
+  "main": "frontend.js",
+  "scripts": {
+    "build": "webpack build",
+    "docs": "typedoc"
+  },
+  "author": "Fixture.ai",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-loader": "^8.1.0",
+    "typedoc": "^0.20.35",
+    "typescript": "^4.1.2",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "files": [
+    "*.js",
+    "*.d.ts"
+  ]
+}

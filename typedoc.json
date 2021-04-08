@@ -1,0 +1,8 @@
+{
+  "entryPoints": ["src/frontend.ts", "src/backend.ts"],
+  "out": "docs",
+  "excludeInternal": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "readme": "none"
+}

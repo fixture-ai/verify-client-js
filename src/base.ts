@@ -1,3 +1,5 @@
+import 'isomorphic-unfetch';
+
 /** @internal */
 export const HEADER_JSON = {'Content-Type': 'application/json'};
 

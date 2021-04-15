@@ -35,7 +35,8 @@ There are two variants of the `VerifyApi` client:
   This client is primarily for frontend/browser apps and allows you to make all
   the API calls that can be made without an API key. Specifically, you cannot make
   calls to create or retrieve a session with this client because that must be done
-  from a backend app where your API key can be kept secret.
+  from a backend app where your API key can be kept secret. You can also use this client
+  for backend/Node.js apps if you only need to make calls that don't require an API key.
   
 - [verify-api/backend](https://fixture-ai.github.io/verify-client-js/modules/backend.html) -
   This client is suitable for backend/Node.js apps where your API key can be kept
@@ -73,7 +74,7 @@ require(['verify-client/frontend'], function(VerifyApi){
 
 ```html
 <!-- HTML script tag import -->
-<script src="node_modules/verify-client/frontend.js"></script>
+<script src="node_modules/verify-client/frontend-browser.min.js"></script>
 <script>
   const client = new verifyclient.VerifyApi();
 </script>

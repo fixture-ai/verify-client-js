@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "description": "Fixture.ai Verify API client for Node.js and browsers",
   "main": "frontend.js",
+  "browser": {
+    "frontend.js": "frontend-browser.js"
+  },
   "scripts": {
     "build": "webpack build",
     "docs": "typedoc"
   },
   "author": "Fixture.ai",
   "license": "MIT",
+  "dependencies": {
+    "isomorphic-unfetch": "^3.1.0"
+  },
   "devDependencies": {
     "ts-loader": "^8.1.0",
     "typedoc": "^0.20.35",

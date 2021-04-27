@@ -6,7 +6,7 @@
  * @module
  */
 import { Session, VerifyApi as BaseVerifyApi } from './base';
-export { Session, SessionInfo } from './base';
+export { OtpResult, Session, SessionInfo } from './base';
 /**
  * Backend Verify API client for using the Verify API.
  *

@@ -51,6 +51,14 @@ export interface SessionInfo {
 }
 
 /**
+ * OTP submission result
+ */
+export interface OtpResult {
+  success: boolean
+  canRetry: boolean
+}
+
+/**
  * Session status
  */
 enum Status {
@@ -117,9 +125,9 @@ export class VerifyApi {
    *
    * @param sessionId The unique id of the session
    * @param otp The one-time-password that was emailed to the user
-   * @returns {Promise<void>}
+   * @returns {Promise<OtpResult>}
    */
-  verifySessionOtp(sessionId: string, otp: string): Promise<void> {
+  verifySessionOtp(sessionId: string, otp: string): Promise<OtpResult> {
     return fetch(`${this._baseUrl}/session/${sessionId}/verify`, {
       method: 'PATCH',
       body: JSON.stringify({otp}),
@@ -130,6 +138,7 @@ export class VerifyApi {
       }
 
       this._log && console.debug(`Verified session ${sessionId} with otp ${otp}`);
+      return response.json();
     });
   }
 }

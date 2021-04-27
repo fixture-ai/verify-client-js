@@ -42,6 +42,13 @@ export interface SessionInfo {
     email: string;
 }
 /**
+ * OTP submission result
+ */
+export interface OtpResult {
+    success: boolean;
+    canRetry: boolean;
+}
+/**
  * Session status
  */
 declare enum Status {
@@ -84,8 +91,8 @@ export declare class VerifyApi {
      *
      * @param sessionId The unique id of the session
      * @param otp The one-time-password that was emailed to the user
-     * @returns {Promise<void>}
+     * @returns {Promise<OtpResult>}
      */
-    verifySessionOtp(sessionId: string, otp: string): Promise<void>;
+    verifySessionOtp(sessionId: string, otp: string): Promise<OtpResult>;
 }
 export {};

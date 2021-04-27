@@ -6,8 +6,8 @@
  * @module
  */
 
-import {Session, VerifyApi as BaseVerifyApi} from './base';
-export {Session, SessionInfo} from './base';
+import { Session, VerifyApi as BaseVerifyApi } from './base';
+export { OtpResult, Session, SessionInfo } from './base';
 
 /** @internal */
 const HEADER_NAME_API_KEY = 'X-Api-Key';

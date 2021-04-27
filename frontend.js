@@ -1865,7 +1865,7 @@ var VerifyApi = /** @class */ (function () {
      *
      * @param sessionId The unique id of the session
      * @param otp The one-time-password that was emailed to the user
-     * @returns {Promise<void>}
+     * @returns {Promise<OtpResult>}
      */
     VerifyApi.prototype.verifySessionOtp = function (sessionId, otp) {
         var _this = this;
@@ -1878,6 +1878,7 @@ var VerifyApi = /** @class */ (function () {
                 throw new Error(response.statusText);
             }
             _this._log && console.debug("Verified session " + sessionId + " with otp " + otp);
+            return response.json();
         });
     };
     return VerifyApi;

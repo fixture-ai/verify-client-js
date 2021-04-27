@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SessionInfo | verify-client</title>
+	<title>OtpResult | verify-client</title>
 	<meta name="description" content="Documentation for verify-client">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -58,10 +58,10 @@
 					<a href="../modules/frontend.html">frontend</a>
 				</li>
 				<li>
-					<a href="frontend.sessioninfo.html">SessionInfo</a>
+					<a href="frontend.otpresult.html">OtpResult</a>
 				</li>
 			</ul>
-			<h1>Interface SessionInfo</h1>
+			<h1>Interface OtpResult</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Session info that can be updated</p>
+						<p>OTP submission result</p>
 					</div>
 				</div>
 			</section>
@@ -79,7 +79,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">SessionInfo</span>
+						<span class="target">OtpResult</span>
 					</li>
 				</ul>
 			</section>
@@ -90,10 +90,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="frontend.sessioninfo.html#companyurl" class="tsd-kind-icon">company<wbr>Url</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="frontend.sessioninfo.html#email" class="tsd-kind-icon">email</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="frontend.sessioninfo.html#firstname" class="tsd-kind-icon">first<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="frontend.sessioninfo.html#lastname" class="tsd-kind-icon">last<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="frontend.otpresult.html#canretry" class="tsd-kind-icon">can<wbr>Retry</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="frontend.otpresult.html#success" class="tsd-kind-icon">success</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,42 +100,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="companyurl" class="tsd-anchor"></a>
-					<h3>company<wbr>Url</h3>
-					<div class="tsd-signature tsd-kind-icon">company<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="canretry" class="tsd-anchor"></a>
+					<h3>can<wbr>Retry</h3>
+					<div class="tsd-signature tsd-kind-icon">can<wbr>Retry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fixture-ai/verify-client-js/blob/7014335/src/base.ts#L49">base.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/fixture-ai/verify-client-js/blob/7014335/src/base.ts#L58">base.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="email" class="tsd-anchor"></a>
-					<h3>email</h3>
-					<div class="tsd-signature tsd-kind-icon">email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="success" class="tsd-anchor"></a>
+					<h3>success</h3>
+					<div class="tsd-signature tsd-kind-icon">success<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fixture-ai/verify-client-js/blob/7014335/src/base.ts#L50">base.ts:50</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="firstname" class="tsd-anchor"></a>
-					<h3>first<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">first<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/fixture-ai/verify-client-js/blob/7014335/src/base.ts#L47">base.ts:47</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="lastname" class="tsd-anchor"></a>
-					<h3>last<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">last<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/fixture-ai/verify-client-js/blob/7014335/src/base.ts#L48">base.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/fixture-ai/verify-client-js/blob/7014335/src/base.ts#L57">base.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -165,30 +143,24 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/frontend.verifyapi.html" class="tsd-kind-icon">Verify<wbr>Api</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="frontend.otpresult.html" class="tsd-kind-icon">Otp<wbr>Result</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="frontend.sessioninfo.html" class="tsd-kind-icon">Session<wbr>Info</a>
+						<a href="frontend.otpresult.html" class="tsd-kind-icon">Otp<wbr>Result</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="frontend.sessioninfo.html#companyurl" class="tsd-kind-icon">company<wbr>Url</a>
+								<a href="frontend.otpresult.html#canretry" class="tsd-kind-icon">can<wbr>Retry</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="frontend.sessioninfo.html#email" class="tsd-kind-icon">email</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="frontend.sessioninfo.html#firstname" class="tsd-kind-icon">first<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="frontend.sessioninfo.html#lastname" class="tsd-kind-icon">last<wbr>Name</a>
+								<a href="frontend.otpresult.html#success" class="tsd-kind-icon">success</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="frontend.sessioninfo.html" class="tsd-kind-icon">Session<wbr>Info</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
